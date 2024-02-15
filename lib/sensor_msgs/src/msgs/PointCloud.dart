@@ -6,7 +6,6 @@
 
 
 // ignore_for_file: type=lint
-import 'dart:convert';
 import 'package:buffer/buffer.dart';
 import 'package:dartros_msgutils/msg_utils.dart';
 import 'package:dartros_msgs/geometry_msgs/msgs.dart';
@@ -83,7 +82,7 @@ class PointCloud extends RosMessage<PointCloud> {
   }
 
   int getMessageSize() {
-    var length = 0;
+    int length = 0;
     length += header.getMessageSize();
     length += 12 * points.length;
     channels.forEach((val) {

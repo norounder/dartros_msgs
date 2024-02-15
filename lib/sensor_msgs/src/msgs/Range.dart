@@ -6,7 +6,6 @@
 
 
 // ignore_for_file: type=lint
-import 'dart:convert';
 import 'package:buffer/buffer.dart';
 import 'package:dartros_msgutils/msg_utils.dart';
 import 'package:std_msgs/msgs.dart';
@@ -95,7 +94,7 @@ class Range extends RosMessage<Range> {
   }
 
   int getMessageSize() {
-    var length = 0;
+    int length = 0;
     length += header.getMessageSize();
     return length + 17;
   }

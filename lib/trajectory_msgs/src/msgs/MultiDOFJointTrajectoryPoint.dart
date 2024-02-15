@@ -6,7 +6,6 @@
 
 
 // ignore_for_file: type=lint
-import 'dart:convert';
 import 'package:buffer/buffer.dart';
 import 'package:dartros_msgutils/msg_utils.dart';
 import 'package:dartros_msgs/geometry_msgs/msgs.dart';
@@ -99,7 +98,7 @@ class MultiDOFJointTrajectoryPoint extends RosMessage<MultiDOFJointTrajectoryPoi
   }
 
   int getMessageSize() {
-    var length = 0;
+    int length = 0;
     length += 56 * transforms.length;
     length += 48 * velocities.length;
     length += 48 * accelerations.length;

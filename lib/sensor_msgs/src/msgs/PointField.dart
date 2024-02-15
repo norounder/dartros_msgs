@@ -74,7 +74,7 @@ class PointField extends RosMessage<PointField> {
   }
 
   int getMessageSize() {
-    var length = 0;
+    int length = 0;
     length += utf8.encode(name).length;
     return length + 13;
   }

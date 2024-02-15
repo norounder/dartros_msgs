@@ -182,7 +182,7 @@ class ImageMarker extends RosMessage<ImageMarker> {
   }
 
   int getMessageSize() {
-    var length = 0;
+    int length = 0;
     length += header.getMessageSize();
     length += utf8.encode(ns).length;
     length += 24 * points.length;

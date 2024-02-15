@@ -6,7 +6,6 @@
 
 
 // ignore_for_file: type=lint
-import 'dart:convert';
 import 'package:buffer/buffer.dart';
 import 'package:dartros_msgutils/msg_utils.dart';
 import 'package:actionlib_msgs/msgs.dart';
@@ -70,7 +69,7 @@ class GetMapActionGoal extends RosActionGoal<GetMapGoal, GetMapActionGoal> {
   }
 
   int getMessageSize() {
-    var length = 0;
+    int length = 0;
     length += header.getMessageSize();
     length += goal_id.getMessageSize();
     return length;

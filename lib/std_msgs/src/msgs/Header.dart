@@ -64,7 +64,7 @@ class Header extends RosMessage<Header> {
   }
 
   int getMessageSize() {
-    var length = 0;
+    int length = 0;
     length += utf8.encode(frame_id).length;
     return length + 16;
   }

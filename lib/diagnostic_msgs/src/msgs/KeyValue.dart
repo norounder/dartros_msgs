@@ -54,7 +54,7 @@ class KeyValue extends RosMessage<KeyValue> {
   }
 
   int getMessageSize() {
-    var length = 0;
+    int length = 0;
     length += utf8.encode(key).length;
     length += utf8.encode(value).length;
     return length + 8;

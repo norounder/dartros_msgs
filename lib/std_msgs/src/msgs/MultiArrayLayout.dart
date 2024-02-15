@@ -6,7 +6,6 @@
 
 
 // ignore_for_file: type=lint
-import 'dart:convert';
 import 'package:buffer/buffer.dart';
 import 'package:dartros_msgutils/msg_utils.dart';
 import 'MultiArrayDimension.dart';
@@ -63,7 +62,7 @@ class MultiArrayLayout extends RosMessage<MultiArrayLayout> {
   }
 
   int getMessageSize() {
-    var length = 0;
+    int length = 0;
     dim.forEach((val) {
       length += val.getMessageSize();
     });

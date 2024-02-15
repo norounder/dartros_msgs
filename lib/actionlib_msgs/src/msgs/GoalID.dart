@@ -54,7 +54,7 @@ class GoalID extends RosMessage<GoalID> {
   }
 
   int getMessageSize() {
-    var length = 0;
+    int length = 0;
     length += utf8.encode(id).length;
     return length + 12;
   }

@@ -6,7 +6,6 @@
 
 
 // ignore_for_file: type=lint
-import 'dart:convert';
 import 'package:buffer/buffer.dart';
 import 'package:dartros_msgutils/msg_utils.dart';
 import 'package:dartros_msgs/geometry_msgs/msgs.dart';
@@ -64,7 +63,7 @@ class Path extends RosMessage<Path> {
   }
 
   int getMessageSize() {
-    var length = 0;
+    int length = 0;
     length += header.getMessageSize();
     poses.forEach((val) {
       length += val.getMessageSize();

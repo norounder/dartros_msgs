@@ -44,7 +44,7 @@ class StringMessage extends RosMessage<StringMessage> {
   }
 
   int getMessageSize() {
-    var length = 0;
+    int length = 0;
     length += utf8.encode(data).length;
     return length + 4;
   }

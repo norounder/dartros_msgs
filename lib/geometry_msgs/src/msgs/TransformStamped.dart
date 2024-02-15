@@ -66,7 +66,7 @@ class TransformStamped extends RosMessage<TransformStamped> {
   }
 
   int getMessageSize() {
-    var length = 0;
+    int length = 0;
     length += header.getMessageSize();
     length += utf8.encode(child_frame_id).length;
     return length + 60;

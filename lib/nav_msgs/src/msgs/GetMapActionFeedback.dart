@@ -6,7 +6,6 @@
 
 
 // ignore_for_file: type=lint
-import 'dart:convert';
 import 'package:buffer/buffer.dart';
 import 'package:dartros_msgutils/msg_utils.dart';
 import 'package:actionlib_msgs/msgs.dart';
@@ -70,7 +69,7 @@ class GetMapActionFeedback extends RosActionFeedback<GetMapFeedback, GetMapActio
   }
 
   int getMessageSize() {
-    var length = 0;
+    int length = 0;
     length += header.getMessageSize();
     length += status.getMessageSize();
     return length;

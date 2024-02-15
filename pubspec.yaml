@@ -1,5 +1,5 @@
 name: dartros_msgs
-description: "A new Flutter package project."
+description: "all of common msgs of ros for dartros (noetic)"
 version: 0.0.1
 homepage: https://github.com/norounder/dartros_msgs/tree/main
 

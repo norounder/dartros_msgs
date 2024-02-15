@@ -158,7 +158,7 @@ class CameraInfo extends RosMessage<CameraInfo> {
   }
 
   int getMessageSize() {
-    var length = 0;
+    int length = 0;
     length += header.getMessageSize();
     length += utf8.encode(distortion_model).length;
     length += 8 * D.length;

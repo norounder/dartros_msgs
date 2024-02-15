@@ -6,7 +6,6 @@
 
 
 // ignore_for_file: type=lint
-import 'dart:convert';
 import 'package:buffer/buffer.dart';
 import 'package:dartros_msgutils/msg_utils.dart';
 import 'OccupancyGrid.dart';
@@ -45,7 +44,7 @@ class GetMapResult extends RosMessage<GetMapResult> {
   }
 
   int getMessageSize() {
-    var length = 0;
+    int length = 0;
     length += map.getMessageSize();
     return length;
   }

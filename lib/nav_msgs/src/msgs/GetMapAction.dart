@@ -9,7 +9,6 @@
 import 'GetMapGoal.dart';
 import 'GetMapFeedback.dart';
 import 'GetMapResult.dart';
-import 'dart:convert';
 import 'package:buffer/buffer.dart';
 import 'package:dartros_msgutils/msg_utils.dart';
 import 'GetMapActionGoal.dart';
@@ -70,7 +69,7 @@ class GetMapAction extends RosActionMessage<GetMapGoal, GetMapActionGoal, GetMap
   }
 
   int getMessageSize() {
-    var length = 0;
+    int length = 0;
     length += action_goal.getMessageSize();
     length += action_result.getMessageSize();
     length += action_feedback.getMessageSize();

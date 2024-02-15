@@ -65,7 +65,7 @@ class TimeReference extends RosMessage<TimeReference> {
   }
 
   int getMessageSize() {
-    var length = 0;
+    int length = 0;
     length += header.getMessageSize();
     length += utf8.encode(source).length;
     return length + 12;

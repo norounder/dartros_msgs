@@ -110,7 +110,7 @@ class MultiDOFJointState extends RosMessage<MultiDOFJointState> {
   }
 
   int getMessageSize() {
-    var length = 0;
+    int length = 0;
     length += header.getMessageSize();
     joint_names.forEach((val) {
       length += 4 + utf8.encode(val).length;

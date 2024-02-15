@@ -6,7 +6,6 @@
 
 
 // ignore_for_file: type=lint
-import 'dart:convert';
 import 'package:buffer/buffer.dart';
 import 'package:dartros_msgutils/msg_utils.dart';
 import 'MultiArrayLayout.dart';
@@ -55,7 +54,7 @@ class Float64MultiArray extends RosMessage<Float64MultiArray> {
   }
 
   int getMessageSize() {
-    var length = 0;
+    int length = 0;
     length += layout.getMessageSize();
     length += 8 * data.length;
     return length + 4;

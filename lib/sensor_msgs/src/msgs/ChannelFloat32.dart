@@ -54,7 +54,7 @@ class ChannelFloat32 extends RosMessage<ChannelFloat32> {
   }
 
   int getMessageSize() {
-    var length = 0;
+    int length = 0;
     length += utf8.encode(name).length;
     length += 4 * values.length;
     return length + 8;

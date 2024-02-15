@@ -126,7 +126,7 @@ class InteractiveMarkerFeedback extends RosMessage<InteractiveMarkerFeedback> {
   }
 
   int getMessageSize() {
-    var length = 0;
+    int length = 0;
     length += header.getMessageSize();
     length += utf8.encode(client_id).length;
     length += utf8.encode(marker_name).length;

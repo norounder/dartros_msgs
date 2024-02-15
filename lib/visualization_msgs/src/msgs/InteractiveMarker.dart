@@ -124,7 +124,7 @@ class InteractiveMarker extends RosMessage<InteractiveMarker> {
   }
 
   int getMessageSize() {
-    var length = 0;
+    int length = 0;
     length += header.getMessageSize();
     length += utf8.encode(name).length;
     length += utf8.encode(description).length;

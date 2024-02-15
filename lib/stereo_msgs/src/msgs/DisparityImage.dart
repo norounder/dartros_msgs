@@ -6,7 +6,6 @@
 
 
 // ignore_for_file: type=lint
-import 'dart:convert';
 import 'package:buffer/buffer.dart';
 import 'package:dartros_msgutils/msg_utils.dart';
 import 'package:dartros_msgs/sensor_msgs/msgs.dart';
@@ -116,7 +115,7 @@ class DisparityImage extends RosMessage<DisparityImage> {
   }
 
   int getMessageSize() {
-    var length = 0;
+    int length = 0;
     length += header.getMessageSize();
     length += image.getMessageSize();
     return length + 37;

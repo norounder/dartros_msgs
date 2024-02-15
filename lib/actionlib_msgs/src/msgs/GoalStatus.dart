@@ -65,7 +65,7 @@ class GoalStatus extends RosMessage<GoalStatus> {
   }
 
   int getMessageSize() {
-    var length = 0;
+    int length = 0;
     length += goal_id.getMessageSize();
     length += utf8.encode(text).length;
     return length + 5;

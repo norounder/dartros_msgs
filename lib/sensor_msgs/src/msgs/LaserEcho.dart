@@ -6,7 +6,6 @@
 
 
 // ignore_for_file: type=lint
-import 'dart:convert';
 import 'package:buffer/buffer.dart';
 import 'package:dartros_msgutils/msg_utils.dart';
 
@@ -44,7 +43,7 @@ class LaserEcho extends RosMessage<LaserEcho> {
   }
 
   int getMessageSize() {
-    var length = 0;
+    int length = 0;
     length += 4 * echoes.length;
     return length + 4;
   }

@@ -13,7 +13,7 @@ void gridCb(OccupancyGrid grid){
 
 Future<void> main(List<String> args) async {
   final node = await initNode('test_node', args);
-  final img_msg = Image(
+  final imgMsg = Image(
       header: null,
       height: 640,
       width: 480,
@@ -26,7 +26,7 @@ Future<void> main(List<String> args) async {
   final sub = node.subscribe<OccupancyGrid>('/image_raw', OccupancyGrid.$prototype, gridCb);
 
   while (true) {
-    pub.publish(img_msg, 1);
+    pub.publish(imgMsg, 1);
     await Future.delayed(const Duration(seconds: 2));
   }
 }

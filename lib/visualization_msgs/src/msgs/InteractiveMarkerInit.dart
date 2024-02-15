@@ -73,7 +73,7 @@ class InteractiveMarkerInit extends RosMessage<InteractiveMarkerInit> {
   }
 
   int getMessageSize() {
-    var length = 0;
+    int length = 0;
     length += utf8.encode(server_id).length;
     markers.forEach((val) {
       length += val.getMessageSize();

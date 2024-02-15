@@ -64,7 +64,7 @@ class MultiArrayDimension extends RosMessage<MultiArrayDimension> {
   }
 
   int getMessageSize() {
-    var length = 0;
+    int length = 0;
     length += utf8.encode(label).length;
     return length + 12;
   }

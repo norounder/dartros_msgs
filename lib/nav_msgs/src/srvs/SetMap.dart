@@ -6,7 +6,6 @@
 
 
 // ignore_for_file: type=lint
-import 'dart:convert';
 import 'package:buffer/buffer.dart';
 import 'package:dartros_msgutils/msg_utils.dart';
 import 'package:dartros_msgs/geometry_msgs/msgs.dart';
@@ -59,7 +58,7 @@ class SetMapRequest extends RosMessage<SetMapRequest> {
   }
 
   int getMessageSize() {
-    var length = 0;
+    int length = 0;
     length += map.getMessageSize();
     length += initial_pose.getMessageSize();
     return length;

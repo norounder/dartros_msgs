@@ -6,7 +6,6 @@
 
 
 // ignore_for_file: type=lint
-import 'dart:convert';
 import 'package:buffer/buffer.dart';
 import 'package:dartros_msgutils/msg_utils.dart';
 import 'package:std_msgs/msgs.dart';
@@ -64,7 +63,7 @@ class PoseArray extends RosMessage<PoseArray> {
   }
 
   int getMessageSize() {
-    var length = 0;
+    int length = 0;
     length += header.getMessageSize();
     length += 56 * poses.length;
     return length + 4;

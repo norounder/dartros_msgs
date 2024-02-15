@@ -93,7 +93,7 @@ class DiagnosticStatus extends RosMessage<DiagnosticStatus> {
   }
 
   int getMessageSize() {
-    var length = 0;
+    int length = 0;
     length += utf8.encode(name).length;
     length += utf8.encode(message).length;
     length += utf8.encode(hardware_id).length;

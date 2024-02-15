@@ -84,7 +84,7 @@ class MenuEntry extends RosMessage<MenuEntry> {
   }
 
   int getMessageSize() {
-    var length = 0;
+    int length = 0;
     length += utf8.encode(title).length;
     length += utf8.encode(command).length;
     return length + 17;

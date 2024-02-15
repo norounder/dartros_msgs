@@ -119,7 +119,7 @@ class SelfTestResponse extends RosMessage<SelfTestResponse> {
   }
 
   int getMessageSize() {
-    var length = 0;
+    int length = 0;
     length += utf8.encode(id).length;
     status.forEach((val) {
       length += val.getMessageSize();

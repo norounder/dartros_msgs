@@ -195,7 +195,7 @@ class BatteryState extends RosMessage<BatteryState> {
   }
 
   int getMessageSize() {
-    var length = 0;
+    int length = 0;
     length += header.getMessageSize();
     length += 4 * cell_voltage.length;
     length += 4 * cell_temperature.length;

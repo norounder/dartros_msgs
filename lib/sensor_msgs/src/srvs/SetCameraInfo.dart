@@ -48,7 +48,7 @@ class SetCameraInfoRequest extends RosMessage<SetCameraInfoRequest> {
   }
 
   int getMessageSize() {
-    var length = 0;
+    int length = 0;
     length += camera_info.getMessageSize();
     return length;
   }
@@ -297,7 +297,7 @@ class SetCameraInfoResponse extends RosMessage<SetCameraInfoResponse> {
   }
 
   int getMessageSize() {
-    var length = 0;
+    int length = 0;
     length += utf8.encode(status_message).length;
     return length + 5;
   }

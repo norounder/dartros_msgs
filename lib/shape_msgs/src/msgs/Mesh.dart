@@ -6,7 +6,6 @@
 
 
 // ignore_for_file: type=lint
-import 'dart:convert';
 import 'package:buffer/buffer.dart';
 import 'package:dartros_msgutils/msg_utils.dart';
 import 'package:dartros_msgs/geometry_msgs/msgs.dart';
@@ -72,7 +71,7 @@ class Mesh extends RosMessage<Mesh> {
   }
 
   int getMessageSize() {
-    var length = 0;
+    int length = 0;
     length += 12 * triangles.length;
     length += 24 * vertices.length;
     return length + 8;

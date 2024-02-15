@@ -6,7 +6,6 @@
 
 
 // ignore_for_file: type=lint
-import 'dart:convert';
 import 'package:buffer/buffer.dart';
 import 'package:dartros_msgutils/msg_utils.dart';
 import 'Point32.dart';
@@ -53,7 +52,7 @@ class Polygon extends RosMessage<Polygon> {
   }
 
   int getMessageSize() {
-    var length = 0;
+    int length = 0;
     length += 12 * points.length;
     return length + 4;
   }

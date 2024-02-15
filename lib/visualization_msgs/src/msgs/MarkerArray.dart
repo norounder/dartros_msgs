@@ -6,7 +6,6 @@
 
 
 // ignore_for_file: type=lint
-import 'dart:convert';
 import 'package:buffer/buffer.dart';
 import 'package:dartros_msgutils/msg_utils.dart';
 import 'Marker.dart';
@@ -53,7 +52,7 @@ class MarkerArray extends RosMessage<MarkerArray> {
   }
 
   int getMessageSize() {
-    var length = 0;
+    int length = 0;
     markers.forEach((val) {
       length += val.getMessageSize();
     });

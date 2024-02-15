@@ -47,7 +47,7 @@ class AddDiagnosticsRequest extends RosMessage<AddDiagnosticsRequest> {
   }
 
   int getMessageSize() {
-    var length = 0;
+    int length = 0;
     length += utf8.encode(load_namespace).length;
     return length + 4;
   }
@@ -132,7 +132,7 @@ class AddDiagnosticsResponse extends RosMessage<AddDiagnosticsResponse> {
   }
 
   int getMessageSize() {
-    var length = 0;
+    int length = 0;
     length += utf8.encode(message).length;
     return length + 5;
   }
