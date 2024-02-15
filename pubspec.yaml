@@ -1,7 +1,7 @@
 name: dartros_msgs
 description: "A new Flutter package project."
 version: 0.0.1
-homepage:
+homepage: https://github.com/norounder/dartros_msgs/tree/main
 
 environment:
   sdk: '>=3.2.6 <4.0.0'
@@ -10,6 +10,9 @@ environment:
 dependencies:
   buffer: ^1.2.2
   dartros: ^0.1.7
+  dartros_msgutils: ^0.1.0
+  std_msgs: ^0.1.0
+  actionlib_msgs: ^0.1.0
   flutter:
     sdk: flutter
   # geometry_msgs: ^0.1.0
