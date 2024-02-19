@@ -1,6 +1,6 @@
 name: dartros_msgs
 description: "all of common msgs of ros for dartros (noetic)"
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/norounder/dartros_msgs/tree/main
 
 environment:
@@ -21,7 +21,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.0
+  flutter_lints: ^3.0.1
   test: ^1.21.4
 
 # For information on the generic Dart part of this file, see the
